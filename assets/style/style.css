@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    color: rgb(248, 247, 247);
+}
+
+.container .logo img {
+    width: 150px;
+    height: 150px;
+}
+
+main{
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	font-style: italic;
+    font-size: 20px;
+}
+html {
+    background-color: black;
+}
+.container{	
+	background-color: #ccc;
+	width: 70%;
+	border-radius: 30px;
+	padding:20px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.container input{
+	width: 350px;
+	height: 30px;
+	border-radius: 30px;
+	border: 1px solid #ccc;
+	outline: none;
+	padding-left: 10px;
+	margin-bottom: 10px;
+
+}
+
+.cadastro-int{
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+    
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes input{
+	width: 180px;
+	height: 30px;
+	background-image: linear-gradient(-50deg, #2af977,#1cabd5);
+	margin-top: 10px;
+	font-size: 18px;
+	font-weight: bold;
+	font-style: italic;
+	cursor: pointer;		
+}
+
+@media (max-width: 1200px) {
+    .cadastro-int{
+        flex-direction: column;
+        align-items: center;
+    }
+
+     .logo img {
+        height: 150px;
+        width: 150px;
+    }
+	
+	
+}
+
+@media (max-width: 500px){
+    .container .logo img {
+        height: 100px;
+        width: 100px;
+    }
+
+	.cadastro-int form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;		
+	}
+
+	.cadastro-int div input {
+		width: 200px;
+	}
+
+	.botoes {
+		flex-direction: column;
+	}
+
+	.cadastro-int .botoes input {
+		font-size: 1em;
+		margin-left: 5px;
+	}
+}
